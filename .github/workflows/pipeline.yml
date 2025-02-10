@@ -8,7 +8,7 @@ jobs:
       - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.2.2-alpha
         id: custom-action  # Added an ID to reference it later
         with:
-          json-file: '././data.json'
+          json-file: 'data.json'
           
       - run: | 
           echo: "Value of variable name: $name"
