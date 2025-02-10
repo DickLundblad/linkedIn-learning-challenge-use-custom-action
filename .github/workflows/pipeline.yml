@@ -10,7 +10,5 @@ jobs:
         with:
           json_file: 'data.json'
           
-      - run: | 
-          echo: "Value of variable name: $name"
-          echo ${{ steps.custom-action.outputs.name }}
-          echo "Loaded value: ${{ steps.custom-action.outputs.name }}"
+      - name: Print Environment Variables
+        run: env | grep 'name'
