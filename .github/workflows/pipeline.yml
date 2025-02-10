@@ -1,0 +1,12 @@
+name: Test Action
+on: push
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.1.0-alpha
+        with:
+          json-file: './data.json'
+      - run: echo "Loaded value: ${{ steps.linkedIn-learning-challenge-create-custom-action.outputs.name }}"
+          
