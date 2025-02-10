@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       #- uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.2.4-alpha
-      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@vmain
+      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@main
         id: custom-action  # Added an ID to reference it later
         with:
           json_file: 'data.json' 
