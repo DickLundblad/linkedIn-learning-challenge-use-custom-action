@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.2.0-alpha
+      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.2.1-alpha
         id: custom-action  # Added an ID to reference it later
         with:
-          json-file: './data.json'
+          json-file: '././data.json'
           
       - run: | 
           echo: "Value of variable name: $name"
