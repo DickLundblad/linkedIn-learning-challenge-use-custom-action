@@ -6,7 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.1.0-alpha
+        id: custom-action  # Added an ID to reference it later
         with:
           json-file: './data.json'
-      - run: echo "Loaded value: ${{ steps.linkedIn-learning-challenge-create-custom-action.outputs.name }}"
-          
+      
+      - run: echo "Loaded value: ${{ steps.custom-action.outputs.name }}"
