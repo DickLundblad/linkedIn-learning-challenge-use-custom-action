@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.2.3-alpha
+      - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@v0.2.3.3-alpha
         id: custom-action  # Added an ID to reference it later
         with:
           json_file: 'data.json'
