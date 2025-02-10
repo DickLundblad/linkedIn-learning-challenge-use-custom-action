@@ -9,15 +9,13 @@ jobs:
       - uses: DickLundblad/linkedIn-learning-challenge-create-custom-action@vmain
         id: custom-action  # Added an ID to reference it later
         with:
-          json_file: 'data.json'
-          
+          json_file: 'data.json' 
       - name: Print Environment Variables
-        run: env | grep 'name'
-        
+        run: env | grep 'name' 
       - name: Print Environment Variables components array
-        run: env | grep 'components'
-        
+        run: env | grep 'components'       
       - name: Print Environment Variables testdata array
         run: env | grep 'testdata'
-        
+      - name: Print Environment Variables testdata array item
+        run: env | grep 'testdata_0_name'
         
