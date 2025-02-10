@@ -12,12 +12,6 @@ jobs:
           json_file: 'data.json' 
       - name: Print Environment Variables
         run: env | grep 'name' 
-      - name: Print Environment Variables components array
-        run: env | grep 'components'       
-      - name: Print Environment Variables testdata array
-        run: env | grep 'testdata'
       - name: Print all environment variables
         run: env
-      #- name: Print Environment Variables testdata array item
-      #  run: env | grep 'testdata_0_name'
         
