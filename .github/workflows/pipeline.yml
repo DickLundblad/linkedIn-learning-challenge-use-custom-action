@@ -9,5 +9,6 @@ jobs:
         id: custom-action  # Added an ID to reference it later
         with:
           json-file: './data.json'
-      
-      - run: echo "Loaded value: ${{ steps.custom-action.outputs.name }}"
+          
+      - run: echo ${{ steps.custom-action.outputs.name }}
+      #- run: echo "Loaded value: ${{ steps.custom-action.outputs.name }}"
