@@ -16,6 +16,6 @@ jobs:
         run: env | grep 'components'       
       - name: Print Environment Variables testdata array
         run: env | grep 'testdata'
-      - name: Print Environment Variables testdata array item
-        run: env | grep 'testdata_0_name'
+      #- name: Print Environment Variables testdata array item
+      #  run: env | grep 'testdata_0_name'
         
