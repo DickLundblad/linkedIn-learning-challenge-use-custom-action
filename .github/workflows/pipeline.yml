@@ -12,3 +12,11 @@ jobs:
           
       - name: Print Environment Variables
         run: env | grep 'name'
+        
+      - name: Print Environment Variables components array
+        run: env | grep 'components'
+        
+      - name: Print Environment Variables testdata array
+        run: env | grep 'testdata'
+        
+        
